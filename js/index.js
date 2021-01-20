@@ -117,19 +117,31 @@ function renderButtons() {
 } 
   
 
-function renderPrice(event) {
+function renderPrice() {
   // Iteration 4: change the HTML of `<aside class="panel price">`
-  const price = document.querySelector('.price');
-  const ul = document.getElementsByTagName('ul');
-  console.log(price);
+  // iterate over state, render only items which are true 
+  let ingredientsList = "";
+  for (let ingredient in state) {
 
-  if (!state.pepperoni) {
-    //document.querySelector('.price').removeChild(price[0]);
-    ul.removeChild(ul[0])
+  }
+    
+// the same for price, calculate the price 
+
+  // const listItems = document.querySelector('.panel.price ul');
+  // listItems. 
 }
 
- 
-}
+// const price = document.querySelector('.price');
+//   const ul = document.getElementsByTagName('ul');
+//   console.log(price);
+//   const listItems = document.querySelector('.panel.price ul');
+//   const parentElement = document.querySelectorAll('.price ul');
+//   console.log(priceItems);
+
+//   if (!state.pepperoni) {
+//     parentElement.removeChild((priceItems[0]));
+  
+//   }
 
 renderEverything();
 
